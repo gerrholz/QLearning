@@ -1,0 +1,6 @@
+Best parameter set for Greedy Epsilon: {'learning_rate': 0.2344206791710185, 'discount_factor': 0.9176983760342422, 'epsilon': 0.03820245426454189, 'temperature': 3.3063411609678854, 'ucb_c': 2.4805972456945913}
+Mean Reward: 7.71, Std Reward: 2.673181624955551
+Best parameter set for Boltzmann: {'learning_rate': 0.19715043101673577, 'discount_factor': 0.9027741457357016, 'epsilon': 0.41792995487487605, 'temperature': 0.11816915703915966, 'ucb_c': 0.19760751439250307}
+Mean Reward: 7.85, Std Reward: 2.7143139096279927
+Best parameter set for UCB: {'learning_rate': 0.3295884549251193, 'discount_factor': 0.9615733052900906, 'epsilon': 0.05424078832156416, 'temperature': 1.2798144427032707, 'ucb_c': 0.8476924674234931}
+Mean Reward: 7.83, Std Reward: 2.705753129906718

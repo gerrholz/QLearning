@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/gerrit/Uni/SoSe%202024/Forschungsmodul/QLearning/mlruns/0/4cea61e61daa4f3a84a189a17d05508d/artifacts
+end_time: 1719829757982
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4cea61e61daa4f3a84a189a17d05508d
+run_name: greedy_epsilon
+run_uuid: 4cea61e61daa4f3a84a189a17d05508d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719829757208
+status: 3
+tags: []
+user_id: gerrit

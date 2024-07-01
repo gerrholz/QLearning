@@ -83,32 +83,39 @@ class Boltzmann:
     
 class UCB:
 
-    def __init__(self) -> None:
-        pass
+    def __init__(self, c) -> None:
+        self.c = c
+        self.action_counts = defaultdict(lambda: np.zeros(env.action_space.n))
 
     def get_action(self, obs, q_values):
-        pass
+        total_counts = sum(self.action_counts[obs]) + 1 #Avoid log with zero
+        ucb_values = q_values[obs] + self.c * np.sqrt(np.log(total_counts) / (self.action_counts[obs] + 1e-5))
+
+        action = int(np.argmax(ucb_values))
+        self.action_counts[obs][action] += 1
+        return action
         
 
-learning_rate = 0.1
+learning_rate = 0.010140147623771485
 n_episodes = 10_000
 eval_steps = 100
 eval_episodes = 100
-epsilon = 0.3
+epsilon = 0.010140147623771485
 
 mean_evaluation_rewards = []
 mean_episode_lengths = []
 
-seed = 42
+seed = 100
 train_seed_offset = 0
 eval_seed_offset = int(1e8)
 
 greedy_epsilon = GreedyEpsilon(epsilon)
 boltzmann = Boltzmann(1)
+ucb = UCB(1000.0)
 agent = TaxiAgent(
-    learning_rate=learning_rate,
-    exploration_strategy=boltzmann,
-    discount_factor=0.99
+    learning_rate=0.49067081915529676,
+    exploration_strategy=greedy_epsilon,
+    discount_factor=0.9691316603842797,
 )
 
 def seed_everything(seed):

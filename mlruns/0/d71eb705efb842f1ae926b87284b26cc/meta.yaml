@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/gerrit/Uni/SoSe%202024/Forschungsmodul/QLearning/mlruns/0/d71eb705efb842f1ae926b87284b26cc/artifacts
+end_time: 1719829758760
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d71eb705efb842f1ae926b87284b26cc
+run_name: boltzmann
+run_uuid: d71eb705efb842f1ae926b87284b26cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1719829757983
+status: 3
+tags: []
+user_id: gerrit
